@@ -18,7 +18,7 @@ public class PlayerMovement : MonoBehaviour
 
     private enum MovementState {Idle,running,Jump,Falling }
 
-
+    public AudioSource jumpSoundEffect;
 
 
     // Start is called before the first frame update
@@ -63,6 +63,7 @@ public class PlayerMovement : MonoBehaviour
   
     void jump()
     {
+        jumpSoundEffect.Play();
         rb.velocity = new Vector2(rb.velocity.x, jumpforce);
     }
 
