@@ -25,7 +25,7 @@ public class Player_life : MonoBehaviour
 
     private void Die()
     {
-        deathSound.Play();
+        deathSound.Play();  
         rb.bodyType=RigidbodyType2D.Static;
         anim.SetTrigger("death");
     }
