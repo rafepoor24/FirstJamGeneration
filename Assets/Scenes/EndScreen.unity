@@ -313,6 +313,7 @@ GameObject:
   - component: {fileID: 950744423}
   - component: {fileID: 950744425}
   - component: {fileID: 950744424}
+  - component: {fileID: 950744426}
   m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
@@ -378,6 +379,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 950744422}
   m_CullTransparentMesh: 1
+--- !u!114 &950744426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 950744422}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbfda731a028d6e48956b09507f37aae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1146473042
 GameObject:
   m_ObjectHideFlags: 0
@@ -749,13 +762,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11500000, guid: cbfda731a028d6e48956b09507f37aae, type: 3}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: 950744426}
+        m_TargetAssemblyTypeName: NewGame, Assembly-CSharp
+        m_MethodName: ResetTheGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
